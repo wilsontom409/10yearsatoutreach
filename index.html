@@ -19,7 +19,10 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
-    
+  
+  <!-- Custom Package Scripts -->
+  <script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <link rel="shortcut icon" href="img/favicon.ico"/>
 </head>
@@ -61,66 +64,109 @@
     </div>
   </nav>
 
+    
   <!-- Resume Sections -->
   <div class="container-fluid p-0">
-    <div class="w-100">
-        <h1 class="mb-0">10 Years of
-            <span class="text-primary">Outreach at UChicago</span>
-        </h1>
-    </div>
-      
-    <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="prospect">
-      <div class="chart-container" style="position: relative; height:30vh; width:80vw">
-        <canvas id="prospects"></canvas>
-      </div>
+    <h1 id="title_words" class="" style="z-index:1; position: absolute;">10 Years of
+        <span class="text-primary">Outreach at UChicago</span>
+    </h1>
+    <section class ="flex justify-content-center"> 
+        <div id="title" style="overflow: hidden; background-size: contain; height: 100vh; position:relative;">
+            <img src="img/skyline.png" style="z-index: -1" id="skyline">
+            <div style ="position: absolute; left: 0; top: 0; background-color: #fff; width: 100%; height: 100%;" class="overlay">
+            </div>
+    
+
+        </div>
+
+        
     </section>
+      
+      
+
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="prospect">
+      <div class ="row">
+        <h2 class="mb-5">Prospects</h2>
+      </div> 
+        
+      <div class ="row">
+        <div class="chart-container" style="position: relative; height:60vh; width:80vw">
+          <canvas id="prospects"></canvas>
+        </div>
+      </div>
+        
+    </section>
+      
       
     <hr class="m-0"> 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="applicant">
-        <div class="chart-container" style="position: relative; height:70vh; width:80vw">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="applicant">
+        
+      <div class ="row">
+        <h2 class="mb-5">Applicants</h2>
+      </div>
+      <div class="row">
+        <div class="chart-container" style="position: relative; height:60vh; width:80vw">
           <canvas id="applicants"></canvas>
         </div>
+      </div>
     </section>
 
     <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="quality">
-        <div class="chart-container" style="position: relative; height:70vh; width:80vw">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="quality">
+      <div class ="row">
+        <h2 class="mb-5">The Right Students</h2>
+      </div>
+      <div class ="row">
+        <div class="chart-container" style="position: relative; height:60vh; width:80vw">
           <canvas id="yeild"></canvas>
         </div>
+      </div>
     </section>
 
+      
     <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="story">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="story">
+      <div class ="row">
+        <h2 class="mb-5">Telling the UChicago Story</h2>
+      </div>
         <div class="social-icons">
-          <a href="#social">
+          <a target="_blank" href="https://www.facebook.com/UChicagoAdmissions">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#social">
+          <a href="#https://www.instagram.com/uchicagoadmissions/">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#social">
+          <a href="#https://twitter.com/ViewChicago">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="#social">
+          <a href="#https://www.snapchat.com/add/uchiadmissions">
             <i class="fab fa-snapchat"></i>
           </a>
-          <a href="#social">
+          <a href="#https://uchicagoadmissions.tumblr.com/">
             <i class="fab fa-tumblr"></i>
           </a>
-          <a href="#social">
+          <a href="#https://www.youtube.com/user/uchicagoadmissions">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
     </section>
 
+      
     <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="internships">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="internships">
+      <div class ="row">
+        <h2 class="mb-5">Internships</h2>
+      </div>
     </section>
 
+
     <hr class="m-0">
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="research">
-      <canvas id="canvas" height="600" width="1000"></canvas>
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="research">
+      <div class ="row">
+        <h2 class="mb-5">Research</h2>
+      </div>
     </section>
 
       

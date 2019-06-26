@@ -104,20 +104,30 @@ $(window).scroll(function() {
 
 
 $(document).ready(function() {
-    new Chart(prospects, {
-        type: 'bar',
-        data: {
-            labels: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
-        datasets: [
-                    {
-                    label: 'Prospects',
-                    backgroundColor: 'rgb(118, 118, 118)',
-                    borderColor: 'rgb(118, 118, 118)',
-                    data: [150000, 170000, 190000, 250000, 280000, 300000, 350000, 380000, 400000, 500000]
-            }]
-        },
-        options: {
-            maintainAspectRatio: false
-        }
+    TweenMax.set(".title", { perspective: 500 });
+    TweenMax.set(".overlay", {z: 150})
+    
+    TweenMax.fromTo(
+    ".overlay",
+    1,
+    { skewX: 30, scale: 1.5  },
+    {
+      delay: 0,
+      skewX: 0,
+      xPercent: 100,
+      transformOrigin: "0% 100%",
+      repeat: 0,
+      repeatDelay: 1,
+      ease: Power2.easeOut
+    }
+    );
+    
+    TweenMax.from(".skyline", 1, {
+        delay: 0,
+        z: 100,
+        transformOrigin: "50% 0%",
+        repeat: 0,
+        repeatDelay: 1,
+        ease: Power3.easeOut
     });
 });
