@@ -125,8 +125,8 @@ $(window).scroll(function() {
                 labels: ['2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
                 datasets: [{
                     label: 'Internships',
-                    backgroundColor: 'rgb(118, 118, 118)',
-                    borderColor: 'rgb(118, 118, 118)',
+                    backgroundColor: 'rgb(193, 102, 34)',
+                    borderColor: 'rgb(193, 102, 34)',
                     data: [150000, 170000, 190000, 250000, 280000, 300000, 350000, 380000, 400000, 500000]
                 }]
             },
@@ -165,12 +165,13 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
-//    TweenMax.to(".title_words", 3, {
-//      opacity: 1,
-//      ease: Elastic.easeOut
-//    });
+    var title = document.getElementById("title");
+    TweenMax.to("#title_words", 3, {
+      opacity: 1,
+      ease: Elastic.easeOut
+    });
     
-    TweenMax.set(".title", { perspective: 500 });
+    TweenMax.set(title, { perspective: 500 });
     TweenMax.set(".overlay", {z: 150})
     
     TweenMax.fromTo(
@@ -188,7 +189,7 @@ $(document).ready(function() {
     }
     );
     
-    TweenMax.from(".skyline", 1, {
+    TweenMax.fromTo(title, 4, {
         delay: 0,
         z: 100,
         transformOrigin: "50% 0%",
@@ -196,6 +197,8 @@ $(document).ready(function() {
         repeatDelay: 1,
         ease: Power3.easeOut
     });
+    $(".img-fluid").addClass("wow fadeIn z-depth-1-half");
+    new WOW().init();
 });
 
 // Get the modal
@@ -205,6 +208,10 @@ var modal = document.getElementById("myModal");
 var img1 = document.getElementById("myImg1");
 var img2 = document.getElementById("myImg2");
 var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
+var img5 = document.getElementById("myImg5");
+var img6 = document.getElementById("myImg6");
+var img7 = document.getElementById("myImg7");
 var modalImg = document.getElementById("img01");
 
 
@@ -223,15 +230,33 @@ img3.onclick = function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
+img4.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img6.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+img7.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+modal.onclick = function() { 
   modal.style.display = "none";
 }
 
-$(".img-fluid").addClass("wow fadeIn z-depth-1-half");
 
-new WOW().init();

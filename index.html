@@ -78,10 +78,7 @@
     <section class ="flex justify-content-center"> 
         <div id="title">
             <img src="img/skyline.png" id="skyline">
-            <div class="overlay">
-        </div>
-    
-
+            <div class="overlay"></div>
         </div>
 
         
@@ -135,14 +132,21 @@
     <section class="resume-section p-3 p-lg-5 flex align-items-start" id="story">
         
         <div class ="row">
-            <h2 class="mb-5">Telling the UChicago Story</h2>
+            <h2 class="mb-3">Telling the UChicago Story</h2>
         </div>
 <!--Carousel Wrapper-->
-        <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="media d-block d-md-flex mb-3 row" style="padding-bottom:1rem;">
+            <h3 class="mb-0">Videos</h3>
+        </div>
+        <div id="video-carousel-example2" class="carousel slide carousel-fade row" data-ride="carousel">
           <!--Indicators-->
-          <ol class="carousel-indicators">
-          </ol>
+
           <!--/.Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+            <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+            <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+          </ol>
           <!--Slides-->
           <div class="carousel-inner" role="listbox">
             <!-- First slide -->
@@ -159,7 +163,7 @@
               <!--Caption-->
               <div class="carousel-caption">
                 <div class="animated fadeInDown">
-                  <h3 class="h3-responsive">Fantastic Feats at UChicago</h3>
+                  <a href="https://youtu.be/1kj45ZB6m64" target="_blank"><h3 class="h3-responsive rounded" id="carousel_caption">Fantastic Feats at UChicago</h3></a>
                 </div>
               </div>
               <!--Caption-->
@@ -180,7 +184,7 @@
               <!--Caption-->
               <div class="carousel-caption">
                 <div class="animated fadeInDown">
-                  <h3 class="h3-responsive">Entrepreneurship at UChicago</h3>
+                  <a href="https://youtu.be/Oogsl66rPHQ" target="_blank"><h3 class="h3-responsive rounded" id="carousel_caption">Entrepreneurship at UChicago</h3></a>
                 </div>
               </div>
               <!--Caption-->
@@ -201,7 +205,7 @@
               <!--Caption-->
               <div class="carousel-caption">
                 <div class="animated fadeInDown">
-                  <h3 class="h3-responsive">Summer Fridays at UChicago</h3>
+                  <a href="https://youtu.be/7BzSc00LhTw" target="_blank"> <h3 class="h3-responsive rounded" id="carousel_caption">Summer Fridays at UChicago</h3></a>
                 </div>
               </div>
               <!--Caption-->
@@ -260,25 +264,28 @@
                 <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/401124258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" style="padding-top: 2rem;"></iframe>
             </div>
         </div>
+            <div class="row" style="padding-top: 3rem;">
+                <h3 class="mt-0">Social</h3>
+            </div>
             <div class="row">
                 <div class="col-8 ">
                     <div class="social-icons d-flex align-items-center">
                       <a target="_blank" href="https://www.facebook.com/UChicagoAdmissions">
                         <i class="fab fa-facebook-f"></i>
                       </a>
-                      <a href="https://www.instagram.com/uchicagoadmissions/">
+                      <a taget="_blank" href="https://www.instagram.com/uchicagoadmissions/">
                         <i class="fab fa-instagram"></i>
                       </a>
-                      <a href="https://twitter.com/ViewChicago">
+                      <a taget="_blank" href="https://twitter.com/ViewChicago">
                         <i class="fab fa-twitter"></i>
                       </a>
-                      <a href="https://www.snapchat.com/add/uchiadmissions">
+                      <a taget="_blank" href="https://www.snapchat.com/add/uchiadmissions">
                         <i class="fab fa-snapchat"></i>
                       </a>
-                      <a href="https://uchicagoadmissions.tumblr.com/">
+                      <a taget="_blank" href="https://uchicagoadmissions.tumblr.com/">
                         <i class="fab fa-tumblr"></i>
                       </a>
-                      <a href="https://www.youtube.com/user/uchicagoadmissions">
+                      <a taget="_blank" href="https://www.youtube.com/user/uchicagoadmissions">
                         <i class="fab fa-youtube"></i>
                       </a>
                     </div>
@@ -300,7 +307,7 @@
           <!--Grid column-->
           <div class="col-lg-4 col-md-12 mb-4">
 
-            <img src="img/placeholder_1.jpg" class="img-fluid mb-4" alt="">
+            <img src="img/placeholder_1.jpg" class="img-fluid mb-4 media-image" alt="" id="myImg4">
 
 
 
@@ -310,11 +317,11 @@
           <!--Grid column-->
           <div class="col-lg-4 col-md-6 mb-4">
 
-            <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" class="img-fluid mb-4" alt=""
-              data-wow-delay="0.1s">
+            <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" class="img-fluid mb-4 media-image" alt=""
+              data-wow-delay="0.1s" id="myImg5">
 
-            <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" class="img-fluid mb-4" alt=""
-              data-wow-delay="0.1s">
+            <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" class="img-fluid mb-4 media-image" alt=""
+              data-wow-delay="0.1s" id="myImg6">
 
           </div>
           <!--Grid column-->
@@ -323,7 +330,7 @@
           <div class="col-lg-4 col-md-6 mb-4">
 
             <img src="img/placeholder_1.jpg" alt=""
-              data-wow-delay="0.2s" class="img-fluid mb-4">
+              data-wow-delay="0.2s" class="img-fluid mb-4 media-image" id="myImg7">
 
 
 
@@ -350,6 +357,8 @@
       <div class ="row">
         <h2 class="mb-5">Research</h2>
       </div>
+        
+
     </section>
       
       

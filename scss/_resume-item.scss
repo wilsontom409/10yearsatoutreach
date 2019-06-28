@@ -78,11 +78,45 @@ img {
   cursor: pointer;
   transition: 0.3s;
 }
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg5 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg6 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg7 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#carousel_caption {
+    background-color: rgba(256, 256, 256, .1);
+    cursor: pointer;
+}
+
+#carousel_caption:hover {background-color: rgba(44, 170, 226, .3);}
 
 #myImg:hover {opacity: 0.7;}
 #myImg1:hover {opacity: 0.7;}
 #myImg2:hover {opacity: 0.7;}
 #myImg3:hover {opacity: 0.7;}
+#myImg4:hover {opacity: 0.7;}
+#myImg5:hover {opacity: 0.7;}
+#myImg6:hover {opacity: 0.7;}
+#myImg7:hover {opacity: 0.7;}
+
+
+
 
 /* The Modal (background) */
 .modal {

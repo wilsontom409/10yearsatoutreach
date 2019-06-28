@@ -61,13 +61,13 @@ p.lead {
     text-align: center;
     font-size: 1.5rem;
     line-height: 3.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-right: 1rem;
     &:last-child {
       margin-right: 0;
     }
     &:hover {
-      background-color: $primary;
+      background-color: $cyan;
     }
   }
 }

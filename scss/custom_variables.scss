@@ -5,10 +5,11 @@
 @import "resume-item.scss";
 @import "bootstrap-overrides.scss";
 
+$cyan:    #47B5FF;
 $maroon:    #800000;
 $good_grey: #767676;
 $primary:   $maroon;
 $secondary:    $good_grey;
-
+$violator:    $cyan;
 
 @import "resume.scss";

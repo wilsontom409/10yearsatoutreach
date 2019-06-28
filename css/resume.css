@@ -65,7 +65,7 @@ p.lead {
   text-align: center;
   font-size: 1.5rem;
   line-height: 3.5rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-right: 1rem;
 }
 
@@ -74,7 +74,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #800000;
+  background-color: #17a2b8;
 }
 
 .dev-icons {
@@ -238,6 +238,43 @@ img {
   transition: 0.3s;
 }
 
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg5 {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg6 {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg7 {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#carousel_caption {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+#carousel_caption:hover {
+  background-color: rgba(44, 170, 226, 0.3);
+}
+
 #myImg:hover {
   opacity: 0.7;
 }
@@ -251,6 +288,22 @@ img {
 }
 
 #myImg3:hover {
+  opacity: 0.7;
+}
+
+#myImg4:hover {
+  opacity: 0.7;
+}
+
+#myImg5:hover {
+  opacity: 0.7;
+}
+
+#myImg6:hover {
+  opacity: 0.7;
+}
+
+#myImg7:hover {
   opacity: 0.7;
 }
 
