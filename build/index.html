@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>10 Years of Outreach at UChicago</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+  <!-- Custom Package Scripts -->
+  <script type="text/javascript" src="js/greensock/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <link rel="shortcut icon" href="img/favicon.ico"/>
+
+</head>
+
+
+<body id="page-top">
+<!--Side Nav Bar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none"></span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/official_logo.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#prospect">Prospects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#applicant" id="graph1">Applicants</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#quality">Quality</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#story">The UChicago story</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#internships">Interrnships</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Resume Sections -->
+  <div class="container-fluid p-0">
+    <h1 id="title_words" class="mb-0 p-3 p-lg-5 flex align-items-center">10 Years of
+        <span class="text-primary">Outreach at UChicago</span>
+    </h1>
+    <section class ="flex justify-content-center">
+        <div id="title">
+            <img src="img/skyline.png" id="skyline">
+            <div class="overlay"></div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="prospect">
+      <div class ="row">
+        <h2 class="mb-5">Prospects</h2>
+      </div>
+
+      <div class ="row">
+        <div class="chart-container">
+          <canvas id="prospects"></canvas>
+        </div>
+      </div>
+
+    </section>
+
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="applicant">
+
+      <div class ="row">
+        <h2 class="mb-5">Applicants</h2>
+      </div>
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="applicants"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="quality">
+      <div class ="row">
+        <h2 class="mb-5">The Right Students</h2>
+      </div>
+      <div class ="row">
+        <div class="chart-container">
+          <canvas id="yeild"></canvas>
+        </div>
+      </div>
+    </section>
+
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="story">
+
+        <div class ="row">
+            <h2 class="mb-3">Telling the UChicago Story</h2>
+        </div>
+<!--Carousel Wrapper-->
+        <div class="media d-block d-md-flex mb-3 row" style="padding-bottom:1rem;">
+            <h3 class="mb-0">Videos</h3>
+        </div>
+        <div id="video-carousel-example2" class="carousel slide carousel-fade row" data-ride="carousel">
+          <!--Indicators-->
+
+          <!--/.Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+            <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+            <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+          </ol>
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!-- First slide -->
+            <div class="carousel-item active">
+              <!--Mask color-->
+              <div class="view mx-auto media-image">
+                <!--Video source-->
+                <video class="video-fluid" autoplay loop muted>
+                  <source src="img/fan_feats.mp4" type="video/mp4" />
+                </video>
+                <div class="mask"></div>
+              </div>
+
+              <!--Caption-->
+              <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                  <a href="https://youtu.be/1kj45ZB6m64" target="_blank"><h3 class="h3-responsive rounded" id="carousel_caption">Fantastic Feats at UChicago</h3></a>
+                </div>
+              </div>
+              <!--Caption-->
+            </div>
+            <!-- /.First slide -->
+
+            <!-- Second slide -->
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view mx-auto media-image">
+                <!--Video source-->
+                <video class="video-fluid" autoplay loop muted>
+                  <source src="img/entrepren.mp4" type="video/mp4" />
+                </video>
+                <div class="mask"></div>
+              </div>
+
+              <!--Caption-->
+              <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                  <a href="https://youtu.be/Oogsl66rPHQ" target="_blank"><h3 class="h3-responsive rounded" id="carousel_caption">Entrepreneurship at UChicago</h3></a>
+                </div>
+              </div>
+              <!--Caption-->
+            </div>
+            <!-- /.Second slide -->
+
+            <!-- Third slide -->
+            <div class="carousel-item">
+              <!--Mask color-->
+              <div class="view mx-auto media-image">
+                <!--Video source-->
+                <video class="video-fluid" autoplay loop muted>
+                  <source src="img/summer_fri.mp4" type="video/mp4"/>
+                </video>
+                <div class="mask"></div>
+              </div>
+
+              <!--Caption-->
+              <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                  <a href="https://youtu.be/7BzSc00LhTw" target="_blank"> <h3 class="h3-responsive rounded" id="carousel_caption">Summer Fridays at UChicago</h3></a>
+                </div>
+              </div>
+              <!--Caption-->
+            </div>
+            <!-- /.Third slide -->
+          </div>
+          <!--/.Slides-->
+          <!--Controls-->
+          <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+<!--Carousel Wrapper-->
+        <div class="row">
+            <div class="col-8 ">
+                <div class="media d-block d-md-flex mt-3" style="padding-top:3rem;">
+                    <h3 class="mb-0">Emails</h3>
+                </div>
+
+                <div class="media d-block d-md-flex mt-4">
+                  <img class="d-flex mb-3 mx-auto media-image z-depth-1" src="https://mdbootstrap.com/img/Others/documentation/img (1)-mini.jpg"
+                    alt="Generic placeholder image" id="myImg1">
+                  <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                    <h5 class="mt-0 font-weight-bold">Email #1</h5>
+                    Content...
+
+                  </div>
+                </div>
+                <div class="media d-block d-md-flex mt-3">
+
+                  <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                    <h5 class="mt-0 font-weight-bold">Email #2</h5>
+                    Content...
+                  </div>
+                  <img class="d-flex mb-3 mx-auto media-image z-depth-1" src="https://mdbootstrap.com/img/Others/documentation/img (107)-mini.jpg"
+                    alt="Generic placeholder image" id="myImg3">
+                </div>
+                <div class="media d-block d-md-flex mt-3">
+                  <img class="d-flex mb-3 mx-auto media-image z-depth-1" src="https://mdbootstrap.com/img/Others/documentation/img (107)-mini.jpg"
+                    alt="Generic placeholder image" id="myImg2">
+                  <div class="media-body text-center text-md-left ml-md-3 ml-0">
+                    <h5 class="mt-0 font-weight-bold">Email #3</h5>
+                    Content...
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-4 media d-block d-md-flex mt-3" style="padding-top:3rem; flex-direction: column">
+                <h3 class="mb-0">Podcasts</h3>
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/401124258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" style="padding-top: 2rem;"></iframe>
+            </div>
+        </div>
+            <div class="row" style="padding-top: 3rem;">
+                <h3 class="mt-0">Social</h3>
+            </div>
+            <div class="row">
+                <div class="col-8 ">
+                    <div class="social-icons d-flex align-items-center">
+                      <a target="_blank" href="https://www.facebook.com/UChicagoAdmissions">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a taget="_blank" href="https://www.instagram.com/uchicagoadmissions/">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <a taget="_blank" href="https://twitter.com/ViewChicago">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a taget="_blank" href="https://www.snapchat.com/add/uchiadmissions">
+                        <i class="fab fa-snapchat"></i>
+                      </a>
+                      <a taget="_blank" href="https://uchicagoadmissions.tumblr.com/">
+                        <i class="fab fa-tumblr"></i>
+                      </a>
+                      <a taget="_blank" href="https://www.youtube.com/user/uchicagoadmissions">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="internships">
+      <div class ="row">
+        <h2 class="mb-5">Internships</h2>
+      </div>
+      <div class="container my-4">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+
+            <img src="img/placeholder_1.jpg" class="img-fluid mb-4 media-image" alt="" id="myImg4">
+
+
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" class="img-fluid mb-4 media-image" alt=""
+              data-wow-delay="0.1s" id="myImg5">
+
+            <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" class="img-fluid mb-4 media-image" alt=""
+              data-wow-delay="0.1s" id="myImg6">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+
+            <img src="img/placeholder_1.jpg" alt=""
+              data-wow-delay="0.2s" class="img-fluid mb-4 media-image" id="myImg7">
+
+
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <div class ="row">
+          <div class="col-md-8">
+              <canvas id="interns"></canvas>
+          </div>
+          <div class="col-md-4">
+              <canvas id="interns_doughnut"></canvas>
+          </div>
+      </div>
+    </section>
+
+
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 flex align-items-start" id="research">
+      <div class ="row">
+        <h2 class="mb-5">Research</h2>
+      </div>
+
+
+    </section>
+
+
+  </div>
+  <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+  <!-- Custom scripts for animations -->
+  <script src="js/graph1.js"></script>
+  <script src="js/graph1.min.js"></script>
+</body>
+
+</html>
